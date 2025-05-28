@@ -99,14 +99,6 @@
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
-
-    .secret {
-      font-size: 0.6em;
-      color: #aaa;
-      margin-top: 2em;
-      cursor: pointer;
-      text-decoration: underline;
-    }
   </style>
 </head>
 <body>
@@ -114,31 +106,13 @@
     <h1>Davide e Claudia</h1>
     <p class="data">7 Giugno 2025</p>
     <p class="welcome">Ti diamo il benvenuto al nostro matrimonio! </p>
-    <br>
+	<br>
     <p class="welcome">Sei parte di un giorno speciale, aiutaci a ricordarlo per sempre.</p>
-    <br>
+	<br>
     <p class="welcome">Carica qui le tue foto della serata ❤️</p>
     <p class="quote">"Un giorno, una promessa. Un amore per sempre."</p>
     <a href="https://www.dropbox.com/request/QILgDI8DIcXxdwsuQ7XU" target="_blank" class="btn">📸 Carica le tue foto</a>
   </div>
-
-  <p class="secret" onclick="showSecret()">Made by Riccardo</p>
-
-  <script>
-    function showSecret() {
-      const codice = prompt("Inserisci il codice per accedere:");
-      if (codice === "0706") {
-        alert(`Ciao mamma,\n
-oggi è il tuo grande giorno e volevo dirti una cosa importante.\n
-Sono tanto felice per te, perché ti meriti tutto l’amore del mondo.\n
-Ora inizia una nuova avventura con Davide, e io sono sicuro che sarete felici insieme.\n
-Ti voglio un mondo di bene ❤️\n
-Con affetto,\n
-Riccardo`);
-      } else if (codice !== null) {
-        alert("Codice errato. Riprova.");
-      }
-    }
-  </script>
+  <p style="font-size: 0.6em; color: #aaa; margin-top: 2em;">Made by Riccardo</p>
 </body>
 </html>
